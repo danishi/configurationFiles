@@ -1,0 +1,75 @@
+"****************************************************************
+"_vimrc															*
+"****************************************************************
+"************************
+" Color					*
+"************************
+syntax on						"シンタックスハイライトを有効化
+"<Java>
+let java_highlight_all=1		"全てのjavaクラスがハイライトされる
+let java_highlight_debug=1
+let g:java_allow_cpp_keywords=1
+let g:java_space_errors=1
+let java_highlight_functions=1	"メソッド宣言文をハイライト
+
+"************************
+" Option				*
+"************************
+set encoding=sjis
+set fileencodings=sjis,utf-8,iso-2022-jp,cp932,euc-jp
+set fileformat=dos
+set nocompatible				"viとの互換モードをオフにする
+set ambiwidth=double
+set backspace=indent,eol,start
+set cindent						"Ｃ言語のスタイルでインデントする
+set clipboard+=unnamed			"クリップボードを共有する
+set cursorline					"カーソル行の背景色を変える
+set cursorcolumn				"カーソル位置のカラムの背景色を変え
+set display=lastline
+set hlsearch					"検索文字列をハイライトする
+set hidden
+set ignorecase
+set incsearch					"インクリメンタルサーチを有効化
+set laststatus=2
+set nobackup					"バックアップを作成しない
+set noswapfile					"スワップファイルを作成しない
+set noundofile					"undoファイルを作成しない
+set nowrap						"ターミナルの右端で文字を折り返さない
+set number						"行番号を表示する
+set ruler						"カーソル位置が右下に表示される
+set smartcase
+set shellslash
+set shiftwidth=4				"自動インデントの空白の数
+set showcmd						"コマンドを画面の最下部に表示する
+set showmatch					"対応する括弧を強調表示(sm)
+set softtabstop=4				"連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
+set tabstop=4					"画面上でタブ文字が占める幅
+set title						"編集中のファイル名を表示
+set viminfo=					"viminfoファイルを作成しない
+set whichwrap=b,s,<,>,[,]		"行の先頭や末尾から、カーソルの移動を行えるようにする
+set wildmenu					"コマンドライン補完
+set wrapscan					"検索時に最後まで行ったら最初に戻る
+
+"*==不可視文字を可視化==*
+set list
+set listchars=eol:$,tab:>.,trail:@,extends:>,precedes:<,nbsp:%
+
+"eol		改行文字
+"tab		タブ
+"trail		行末のスペース
+"extends	折り返した行の行末
+"precedes	折り返してきた行の行頭
+"nbsp		ノンブレーカブルスペース(?)
+"*======================*
+
+
+"************************
+" No Use				*
+"************************
+"set expandtab					"タブ入力を複数の空白入力に置き換える
+"set wrap						"行を折り返す
+"set autoindent					"改行時にインデントを引き継いで改行する(ai)
+"set encoding=utf-8				"UTF-8でエンコーディング
+
+
+"echo ".vimrc read compleate!"
