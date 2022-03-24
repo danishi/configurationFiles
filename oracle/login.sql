@@ -2,23 +2,23 @@ SET LINESIZE 500
 SET PAGESIZE 1000
 SET SQLBLANKLINE ON
 
--- DBMS_OUTPUT�̏o�̓o�b�t�@��1MB�ɂ���
+-- DBMS_OUTPUTの出力バッファを1MBにする
 SET SERVEROUTPUT ON SIZE 1000000
 
--- �v�����v�g�̏�����ύX
+-- プロンプトの書式を変更
 SET SQLPROMPT "_USER'@'_CONNECT_IDENTIFIER> "
 
--- �v�����v�g�Ɏ����iHH:MM:SS)��\������
+-- プロンプトに時刻（HH:MM:SS)を表示する
 SET TIME ON
 
--- �^�C�~���O���v�i�^�C�}�[�j��\������
+-- タイミング統計（タイマー）を表示する
 SET TIMING ON
 
--- EDIT�R�}���h�Ŏg�p����G�f�B�^���w��
+-- EDITコマンドで使用するエディタを指定
 define_editor="vim"
 
--- NULL�̂Ƃ��ɕ\�����镶�����ݒ�
+-- NULLのときに表示する文字列を設定
 SET NULL '<NULL>'
 
--- �u���ϐ��ɐݒ肷��O��̏�Ԃ�\������
+-- 置換変数に設定する前後の状態を表示する
 SET VERIFY ON
